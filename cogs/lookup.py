@@ -19,12 +19,12 @@ class lookup(commands.Cog):
     async def inv(self, ctx):
         print('inv link generated')
         embed = discord.Embed(
-            title="Wanna use this selfbot?",
-            description=" [__Download!__](https://github.com/Iaugh/selfbot)",
+            title="use this sellfbot",
+            description=" [__download!__](https://github.com/tobbyy/selfbot)",
             color=color,
             timestamp=datetime.now(),
         )
-        embed.set_footer(text="moon")
+        embed.set_footer(text="star")
         await ctx.message.channel.send(embed=embed)
 
     @commands.command()

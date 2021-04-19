@@ -87,7 +87,7 @@ async def stream(ctx, *, message):
         await ctx.message.delete()
         stream = discord.Streaming(
             name=message,
-            url="https://www.twitch.tv/moon",
+            url="https://www.twitch.tv/star",
         )
         await client.change_presence(activity=stream)
 
@@ -103,14 +103,6 @@ async def purge(ctx, amount: int): # b'\xfc'
 
 
 @client.command()
-async def embed(ctx, *, content: str):
-    await ctx.message.delete()
-    title, description = content.split('|')
-    embed = discord.Embed(title=title, description=description, color=color)
-    await ctx.send(embed=embed)
-
-
-@client.command()
 async def bot(ctx):
     my_embed = discord.Embed(color=color)
 
@@ -123,7 +115,7 @@ async def bot(ctx):
     my_embed.add_field(name="Servers", value=len(client.guilds))
 
     my_embed.add_field(name="Website",
-                       value=f"[web](https://bye.lol)",)
+                       value=f"[Web](https://bye.lol)",)
 
     my_embed.add_field(name="Download Self Bot",
                        value=f"[Click Here!](https://discord.com/api/oauth2/authorize?client_id=771697308458811434&permissions=8&scope=bot)",

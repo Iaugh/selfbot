@@ -53,7 +53,6 @@ class help(commands.Cog):
         embed.add_field(name="`av`", value="*Avatar someone*", inline=False)
         embed.add_field(name="`purge`", value="*Purges amount of messages*", inline=False)
         embed.add_field(name="`snipe`", value="*Snipe a message*", inline=False)
-        embed.add_field(name="`embed`", value="*Embed a message, Title | Description*", inline=False)
 
         # embed.add_field(name="",value="",inline=False)
         embed.set_footer(text='𝙪𝙨𝙚𝙧 𝙘𝙤𝙢𝙢𝙖𝙣𝙙𝙨')

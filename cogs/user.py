@@ -32,7 +32,7 @@ class user(commands.Cog):
     @command(aliases=['s'])
     async def snipe(self, ctx):
         if self.smi is None:
-            await ctx.send("Nothing to snipe within the last 60 seconds.")
+            await ctx.send("bro no one deleted a message idiot")
         else:
             now = datetime.now()
             current_time = now.strftime("%H:%M")
